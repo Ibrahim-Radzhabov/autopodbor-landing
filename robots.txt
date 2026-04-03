@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /privacy.html
+
+# TODO: заменить на реальный домен
+Sitemap: https://autopodbor.example.com/sitemap.xml
