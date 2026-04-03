@@ -4,59 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Политика конфиденциальности — Автоподбор</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230D0D11'/><text x='50' y='68' text-anchor='middle' font-family='Georgia,serif' font-size='52' fill='%23B8926A'>A</text></svg>" type="image/svg+xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23EAF1F3'/><rect x='18' y='18' width='64' height='64' rx='18' fill='%230B3B4A'/><text x='50' y='62' text-anchor='middle' font-family='Arial,sans-serif' font-size='34' font-weight='700' fill='%23F7FAFB'>A</text></svg>" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500&subset=cyrillic&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Onest:wght@300;400;500;600;700&subset=cyrillic&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg-primary: #0D0D11;
-    --text-primary: #ECEAE5;
-    --text-secondary: #8A8A90;
-    --accent: #B8926A;
-    --border: rgba(255, 255, 255, 0.06);
+    --bg-primary: #F7FAFB;
+    --bg-secondary: #EEF4F6;
+    --bg-elevated: #FFFFFF;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #64748B;
+    --accent: #0B3B4A;
+    --accent-hover: #14505C;
+    --border: rgba(15, 23, 42, 0.10);
+    --border-accent: rgba(11, 59, 74, 0.18);
+    --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.06);
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: "Outfit", sans-serif;
-    font-weight: 300;
+    font-family: "Onest", "Segoe UI", sans-serif;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 1.7;
     color: var(--text-primary);
-    background: var(--bg-primary);
-    padding: 2rem clamp(1.25rem, 4vw, 2rem);
+    background:
+      radial-gradient(circle at top left, rgba(11, 59, 74, 0.08), transparent 26%),
+      linear-gradient(180deg, #FCFEFF 0%, var(--bg-primary) 58%, #F2F7F8 100%);
+    padding: 2rem clamp(1.25rem, 4vw, 2rem) 4rem;
     -webkit-font-smoothing: antialiased;
   }
-  .container { max-width: 48rem; margin: 0 auto; }
+  .container {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border: 1px solid var(--border);
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(8px);
+  }
   a { color: var(--accent); }
   h1 {
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
+    font-family: "Onest", "Segoe UI", sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
   }
   .subtitle {
     color: var(--text-secondary);
     font-size: 0.875rem;
     margin-bottom: 2.5rem;
+    font-family: "IBM Plex Mono", "SFMono-Regular", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
   }
   h2 {
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: 1.25rem;
+    font-family: "Onest", "Segoe UI", sans-serif;
+    font-size: 1.2rem;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
   }
   p, ul { margin-bottom: 1rem; }
   ul { padding-left: 1.25rem; }
   li { margin-bottom: 0.375rem; }
   .back {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-bottom: 2rem;
     color: var(--accent);
-    font-size: 0.875rem;
+    font-size: 0.78rem;
+    font-family: "IBM Plex Mono", "SFMono-Regular", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    padding: 0.55rem 0.8rem;
+    border: 1px solid var(--border-accent);
+    border-radius: 999px;
+    background: rgba(11, 59, 74, 0.05);
+  }
+  .back:hover {
+    background: rgba(11, 59, 74, 0.08);
     text-decoration: none;
   }
-  .back:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
